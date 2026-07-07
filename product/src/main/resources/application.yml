@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product
+    username: duong
+    password: duong123
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+server:
+  port: 8081
