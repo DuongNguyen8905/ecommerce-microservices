@@ -28,23 +28,18 @@ git clone git@github.com:DuongNguyen8905/ecommerce-microservices.git
 
 cd ecommerce-microservices/springboot-ecommerce
 
-3. Start PostgreSQL
+2. Start PostgreSQL
    
 docker compose up -d
 
 Make sure PostgreSQL is running before starting the Spring Boot application.
 
-5. Create the database
+3. Create the database
    
-If the database does not already exist, create:  ecomdb
+docker exec -it postgres_container psql -U duong -c "CREATE DATABASE ecomdb;"
+ 
 
-docker exec -it postgres_container psql -U duong
-
-Then:   CREATE DATABASE ecomdb;
-
-Exit PostgreSQL 
-
-7. Run the Spring Boot application
+4. Run the Spring Boot application
    
 On Linux/macOS:    ./mvnw spring-boot:run
 
