@@ -46,3 +46,39 @@ On Linux/macOS:    ./mvnw spring-boot:run
 On Windows:     mvnw.cmd spring-boot:run
 
 The application will start on the port configured in application.properties or application.yml.
+
+## API Testing
+
+The APIs can also be tested using Postman.
+
+Example CRUD operations:
+
+POST   /api/users
+GET    /api/users
+GET    /api/users/{id}
+PUT    /api/users/{id}
+
+POST   /api/products
+GET    /api/products
+GET    /api/products/{id}
+GET    /api/products/search?keyword=ip
+PUT    /api/products/{id}
+DELETE /api/products/{id}
+
+POST   /api/cart
+DELETE /api/cart/items/1
+GET    /api/cart
+
+POST   /api/orders
+
+## Project Goals
+
+Refactor a monolithic Spring Boot application into scalable, independent microservices.
+
+Design and build robust RESTful CRUD APIs.
+
+Integrate PostgreSQL integrated with Spring Data JPA/Hibernate.
+
+Integrate Docker Compose.
+
+Document and test APIs via Postman.
